@@ -21,7 +21,7 @@ public class Main {
         veritabani.urunEkle(u1);
         veritabani.urunEkle(u2);
 
-
+//
     }
 
 }
