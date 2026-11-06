@@ -1,11 +1,11 @@
 public class Musteri {
-    string ad:
-    string soyad:
-    int id:
-    string mail:
-    double bakiye:
+    String ad;
+    String soyad;
+    int id;
+    String mail;
+    double bakiye;
 
-    public Musteri(string ad, string soyad, int id, string mail, double bakiye){
+    public Musteri(String ad, String soyad, int id, String mail, double bakiye){
         this.ad=ad;
         this.soyad=soyad;
         this.id=id;
