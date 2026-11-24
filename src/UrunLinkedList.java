@@ -24,11 +24,15 @@ public void addFirst(Urun urun) {
 //urun sona eklenir
 public void addLast (Urun urun) {
 	Dugum yeni= new Dugum(urun);
-	
-} 
+	if (head==null){
+		head=yeni;
+		return;
+	}
+Dugum gecici=head;
+	while(gecici.next!=null){
+		gecici=gecici.next;
+} gecici.next=yeni;
 
 
-
-
-
+}
 }
