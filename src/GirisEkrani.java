@@ -2,16 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class GirisEskrani extends JFrame {
+public class GirisEkrani extends JFrame {
 
 
 UrunAgaci agac = new UrunAgaci();
 
 UrunLinkedList sepet  = new UrunLinkedList();
 
-public GirisEskrani {
+public GirisEkrani() {
 
-agac.urunEkle(new Urun(105, "Laptop" , "Elektronik" 30000, 10));
+agac.urunEkle(new Urun(105, "Laptop" , "Elektronik", 30000, 10));
 agac.urunEkle(new Urun (102 , "Klavye", "Aksesuar", 1500, 25));
 agac.urunEkle(new Urun(108, "Mouse", "Aksesuar",  800, 30));
 
