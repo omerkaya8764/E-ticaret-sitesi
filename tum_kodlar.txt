@@ -266,12 +266,12 @@ Dugum gecici=head;
 
 }
 }
-=== C:\Users\OMER\OneDrive\Belgeler\GitHub\E-ticaret-sitesi\src\datastructure\CartStack.java ===
+=== C:\Users\OMER\OneDrive\Belgeler\GitHub\E-ticaret-sitesi\src\datastructure\GeriAlma.java ===
 package datastructure;
 
 import model.Product;
 
-public class CartStack {
+public class GeriAlma {
 	
 	// YÄ±ÄŸÄ±nÄ±n en Ã¼stÃ¼ndeki dÃ¼ÄŸÃ¼mÃ¼ tutan referans
 	private Node top;
@@ -289,7 +289,7 @@ public class CartStack {
 	}
 	
 	// Constructor
-	public CartStack() {
+	public GeriAlma() {
 		this.top = null;
 		this.size = 0;
 	}

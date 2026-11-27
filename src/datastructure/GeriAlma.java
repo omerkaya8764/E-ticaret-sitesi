@@ -1,7 +1,7 @@
 
 
 
-public class CartStack {
+public class GeriAlma {
 	
 	// Yığının en üstündeki düğümü tutan referans
 	private Node top;
@@ -19,7 +19,7 @@ public class CartStack {
 	}
 	
 	// Constructor
-	public CartStack() {
+	public GeriAlma() {
 		this.top = null;
 		this.size = 0;
 	}
