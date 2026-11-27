@@ -1,6 +1,5 @@
-package datastructure;
 
-import model.Product;
+
 
 public class CartStack {
 	
@@ -10,10 +9,10 @@ public class CartStack {
 	
 	// Yığın düğümü (Node) iç sınıfı
 	private class Node {
-		Product data;
+		Urun data;
 		Node next;
 		
-		public Node(Product data) {
+		public Node(Urun data) {
 			this.data = data;
 			this.next = null;
 		}
@@ -31,7 +30,7 @@ public class CartStack {
 	}
 	
 	// Sepete ürün ekleme (push - LIFO mantığı)[span_2](start_span)[span_2](end_span)
-	public void push(Product product) {
+	public void push(Urun product) {
 		Node newNode = new Node(product);
 		newNode.next = top; // Yeni düğüm eski top`ı gösterir
 		top = newNode;     // Top artık yeni düğüm olur
@@ -39,18 +38,19 @@ public class CartStack {
 	}
 	
 	// Son eklenen ürünü çıkarma / Geri al - Undo (pop)[span_3](start_span)[span_3](end_span)
-	public Product pop() {
+	public Urun pop() {
 		if (isEmpty()) {
 			System.out.println("Uyarı: Sepet boş, geri alınacak işlem yok!");
+			return null;
 		}
-		Product poppedProduct = top.data; // En üstteki veriyi al
+		Urun poppedProduct = top.data; // En üstteki veriyi al
 		top = top.next;                  // Top bir alta kaydırılır
 		size--;
 		return poppedProduct;
 	}
 	
 	// En üstteki ürünü silmeden inceleme (peek)[span_4](start_span)[span_4](end_span)
-	public Product peek() {
+	public Urun peek() {
 		if (isEmpty()) {
 			return null;
 			
